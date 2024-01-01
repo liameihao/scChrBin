@@ -22,7 +22,13 @@ Usage: main.py [OPTIONS]
 #   --help                  Show this message and exit.
 ```
 
-We recommend finding the optimal number of bins by making predictions on the data using a machine learning classifier. By utilizing the [Feature-scML](https://github.com/liameihao/Feature-scML) tool, it is possible to automate machine learning for binned data, and then proceed with further calculations using the optimal number of bins. 
+Users can simplify the operation through our main.sh to obtain data with different numbers of bins. Users can modify the maximum bin number, starting bin number, and step size in the main.sh script to customize the binning data.
+
+```
+sh main.sh
+```
+
+For optimal bin number, we recommend finding the optimal number of bins by making predictions on the data using a machine learning classifier. By utilizing the [Feature-scML](https://github.com/liameihao/Feature-scML) tool, it is possible to automate machine learning for binned data, and then proceed with further calculations using the optimal number of bins. 
 
 # Requirements
 

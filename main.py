@@ -79,8 +79,9 @@ def main(chr_length_file, gene_gtf_file, width, input_file):
     data_counts = pd.read_csv(input_file, sep="\t")
     data_counts.columns = ["gene_name"]+list(data_counts.columns[1:])
     results = bin_sum(data_counts, gene_bin, width)
-    results.to_csv(filename_rename(input_file,"_scChrBin_bin_counts"), index=None)
-    print("output file path: ", filename_rename(input_file,"_scChrBin_bin_counts"))
+    outfile = filename_rename(input_file,"_scChrBin_bin_counts") + "_" + str(width)
+    results.to_csv(outfile, index=None)
+    print("output file path: {}".format(outfile))
     print("end")
     print("#################")
 
