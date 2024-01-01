@@ -9,7 +9,7 @@ python main.py --chr_length_file chromelength.txt --gene_gtf_file Homo_sapiens.G
 
 # help
 python main.py --help
-Usage: 123.py [OPTIONS]
+Usage: main.py [OPTIONS]
 
 # Options:
 #   --chr_length_file PATH  Path to the chromosome length file.  [required]
