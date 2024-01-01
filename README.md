@@ -2,6 +2,9 @@
 Single-cell transcriptome gene expression values are binned according to chromatin position
 
 # Use
+
+Our tool bins each chromatin into an equal number of bins based on the length of the chromatin, using the gene annotation files (GTF file) and the lengths of each chromatin.
+
 ```python
 # example
 python main.py --chr_length_file chromelength.txt --gene_gtf_file Homo_sapiens.GRCh37.87.gtf  --width 10 --input_file rpkm.txt
